@@ -1,0 +1,31 @@
+{
+  "name": "chatbot-nodejs-imasters",
+  "version": "1.0.0",
+  "description": "Repositório responsável pelos códigos de exemplo desenvolvidos no artigo do iMasters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glaucia86/chatbot-nodejs-imasters.git"
+  },
+  "keywords": [
+    "botbuilder",
+    "bots",
+    "chatbots",
+    "botbuilder-samples",
+    "bot-framework",
+    "node.js"
+  ],
+  "author": "Glaucia Lemos <glaucia_lemos86@hotmail.com> (http://www.code4coders.wordpress.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/chatbot-nodejs-imasters/issues"
+  },
+  "homepage": "https://github.com/glaucia86/chatbot-nodejs-imasters#readme",
+  "dependencies": {
+    "botbuilder": "^3.14.1",
+    "restify": "^7.1.1"
+  }
+}

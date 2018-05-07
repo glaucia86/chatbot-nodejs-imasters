@@ -20,6 +20,52 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 * Cadastro no site LUIS: https://www.luis.ai/
 * Cadastro no site Azure: https://azure.microsoft.com/pt-br/services/bot-service/
 
+OBS.: Quando seguir o passo da instalação do **node-gyp** é de suma importância que façam o seguinte:
+
+**Passo 1:** criar manualmente o arquivo **binding.gyp** dentro do diretório do node_modules do appData, conforme o exemplo abaixo:
+
+```
+
+> C:\users\UserName\appdata\roaming\npm\node_modules\node-gyp
+
+```
+
+**Passo 2:** incluir no arquivo **binding.gyp** o seguinte bloco de código e salve:
+
+```
+
+{
+    "targets": [{
+    "target_name": "binding",
+    "sources": [ "build/Release/binding.node" ]
+    }]
+}
+
+```
+
+**Passo 3:** feito isso, agore execute os seguintes comandos abaixo, dentro do mesmo diretório do appData:
+
+```
+
+> node-gyp configure
+
+```
+
+```
+
+> node-gyp configure --msvs_version=2015
+
+```
+
+```
+
+> node-gyp build
+
+```
+
+Seguindo todos esses passos, vocês estará para pronta para instalar as depedências do projeto na pasta do projeto! ;)
+
+
 ## Série de Vídeo Aulas sobre: ChatBots com Node.Js + Microsoft Bot Framework:
 
 * **Série de Vídeos: Hands On: Bots + Node.Js + Microsoft Bot Framework:**: [AQUI](https://bit.ly/2K8mVp7)

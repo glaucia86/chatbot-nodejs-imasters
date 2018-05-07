@@ -1,9 +1,11 @@
 /**
+ * 
  * Arquivo: olaMundoBot.js
  * Data: 23/04/2018
  * Descrição: Desenvolvimento de um Bot via Bot Emulator.
  * Author: Glaucia Lemos
  *
+ * 
  */
 
 var restify = require('restify');

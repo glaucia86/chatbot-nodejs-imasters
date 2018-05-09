@@ -36,6 +36,8 @@ bot.dialog('/', [
     (session, results) => {
         let nome = results.response;
         session.send(`Oi! ${nome}`);
+
+        session.beginDialog('/perguntarPratoPredileto');
     }
 ]);
 
@@ -57,6 +59,6 @@ bot.dialog('/lugarPredileto', [
     },
     (session, results) => {
             let lugarPreferido = results.response;
-            builder.Prompts.text(`Amamos o **${lugarPredileto}**! Realmente é simplesmente muito lindo!`)
+            session.endDialog(`Amamos o **${lugarPredileto}**! Realmente é simplesmente muito lindo!`)
     }
 ]);

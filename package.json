@@ -26,6 +26,7 @@
   "homepage": "https://github.com/glaucia86/chatbot-nodejs-imasters#readme",
   "dependencies": {
     "botbuilder": "^3.14.1",
+    "dotenv-extended": "^2.0.2",
     "restify": "^7.1.1"
   }
 }

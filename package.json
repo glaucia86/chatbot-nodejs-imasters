@@ -27,7 +27,7 @@
   "dependencies": {
     "botbuilder": "^3.14.0",
     "dotenv-extended": "^2.0.1",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "restify": "^6.3.4"
   }
 }
